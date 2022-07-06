@@ -1,0 +1,32 @@
+{
+  "name": "book-search-and-save",
+  "version": "1.0.0",
+  "description": "Search for books and save them to your queue.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lindsayreiner/book-search-and-save.git"
+  },
+  "author": "Lindsay Reiner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lindsayreiner/book-search-and-save/issues"
+  },
+  "homepage": "https://github.com/lindsayreiner/book-search-and-save#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "concurrently": "^7.2.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "sequelize": "^6.21.2"
+  }
+}
